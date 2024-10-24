@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/frg_login">
+
+    <fragment
+        android:id="@+id/frg_home_screen"
+        android:name="com.mbgmonserrath.ckeckmee.frg_home_screen"
+        android:label="fragment_frg_home_screen"
+        tools:layout="@layout/fragment_frg_home_screen" >
+        <action
+            android:id="@+id/action_frg_home_screen_to_frg_login"
+            app:destination="@id/frg_login" />
+    </fragment>
+    <fragment
+        android:id="@+id/frg_login"
+        android:name="com.mbgmonserrath.ckeckmee.frg_login"
+        android:label="fragment_frg_login"
+        tools:layout="@layout/fragment_frg_login" >
+        <action
+            android:id="@+id/action_frg_login_to_frg_menu"
+            app:destination="@id/frg_menu"
+            app:enterAnim="@anim/anim2"
+            app:exitAnim="@anim/anim2_2"/>
+    </fragment>
+    <fragment
+        android:id="@+id/frg_menu"
+        android:name="com.mbgmonserrath.ckeckmee.frg_menu"
+        android:label="fragment_frg_menu"
+        tools:layout="@layout/fragment_frg_menu" >
+        <action
+            android:id="@+id/action_frg_menu_to_frg_perfil"
+            app:destination="@id/frg_perfil"
+            app:enterAnim="@anim/anim1_1"
+            app:exitAnim="@anim/anim1_2"/>
+        <action
+            android:id="@+id/action_frg_menu_to_frg_inscrpciones"
+            app:destination="@id/frg_inscrpciones"
+            app:enterAnim="@anim/anim1_1"
+            app:exitAnim="@anim/anim1_2"/>
+        <action
+            android:id="@+id/action_frg_menu_to_frg_grupos"
+            app:destination="@id/frg_grupos"
+            app:enterAnim="@anim/anim1_1"
+            app:exitAnim="@anim/anim1_2"/>
+        <action
+            android:id="@+id/action_frg_menu_to_frg_acerca_de"
+            app:destination="@id/frg_acerca_de"
+            app:enterAnim="@anim/anim1_1"
+            app:exitAnim="@anim/anim1_2"/>
+        <action
+            android:id="@+id/action_frg_menu_to_frg_login"
+            app:destination="@id/frg_login" />
+    </fragment>
+    <fragment
+        android:id="@+id/frg_perfil"
+        android:name="com.mbgmonserrath.ckeckmee.frg_perfil"
+        android:label="fragment_frg_perfil"
+        tools:layout="@layout/fragment_frg_perfil" >
+        <action
+            android:id="@+id/action_frg_perfil_to_frg_inscrpciones"
+            app:destination="@id/frg_inscrpciones"
+            app:enterAnim="@anim/anim1_1"
+            app:exitAnim="@anim/anim1_2"/>
+        <action
+            android:id="@+id/action_frg_perfil_to_frg_menu"
+            app:destination="@id/frg_menu"
+            app:enterAnim="@anim/anim1_1"
+            app:exitAnim="@anim/anim1_2"/>
+        <action
+            android:id="@+id/action_frg_perfil_to_frg_grupos"
+            app:destination="@id/frg_grupos"
+            app:enterAnim="@anim/anim1_1"
+            app:exitAnim="@anim/anim1_2"/>
+    </fragment>
+    <fragment
+        android:id="@+id/frg_inscrpciones"
+        android:name="com.mbgmonserrath.ckeckmee.frg_inscrpciones"
+        android:label="fragment_frg_inscrpciones"
+        tools:layout="@layout/fragment_frg_inscrpciones" >
+        <action
+            android:id="@+id/action_frg_inscrpciones_to_frg_menu"
+            app:destination="@id/frg_menu"
+            app:enterAnim="@anim/anim1_1"
+            app:exitAnim="@anim/anim1_2"/>
+        <action
+            android:id="@+id/action_frg_inscrpciones_to_frg_grupos"
+            app:destination="@id/frg_grupos"
+            app:enterAnim="@anim/anim1_1"
+            app:exitAnim="@anim/anim1_2"/>
+        <action
+            android:id="@+id/action_frg_inscrpciones_to_frg_perfil"
+            app:destination="@id/frg_perfil"
+            app:enterAnim="@anim/anim1_1"
+            app:exitAnim="@anim/anim1_2"/>
+        <action
+            android:id="@+id/action_frg_inscrpciones_to_frg_CRUD_Inscri"
+            app:destination="@id/frg_CRUD_Inscri" />
+    </fragment>
+    <fragment
+        android:id="@+id/frg_grupos"
+        android:name="com.mbgmonserrath.ckeckmee.frg_grupos"
+        android:label="fragment_frg_grupos"
+        tools:layout="@layout/fragment_frg_grupos" >
+        <action
+            android:id="@+id/action_frg_grupos_to_frg_asistencia"
+            app:destination="@id/frg_asistencia" />
+        <action
+            android:id="@+id/action_frg_grupos_to_frg_menu"
+            app:destination="@id/frg_menu"
+            app:enterAnim="@anim/anim1_1"
+            app:exitAnim="@anim/anim1_2"/>
+        <action
+            android:id="@+id/action_frg_grupos_to_frg_inscrpciones"
+            app:destination="@id/frg_inscrpciones"
+            app:enterAnim="@anim/anim1_1"
+            app:exitAnim="@anim/anim1_2"/>
+        <action
+            android:id="@+id/action_frg_grupos_to_frg_perfil"
+            app:destination="@id/frg_perfil"
+            app:enterAnim="@anim/anim1_1"
+            app:exitAnim="@anim/anim1_2"/>
+    </fragment>
+    <fragment
+        android:id="@+id/frg_asistencia"
+        android:name="com.mbgmonserrath.ckeckmee.frg_asistencia"
+        android:label="fragment_frg_asistencia"
+        tools:layout="@layout/fragment_frg_asistencia" >
+        <action
+            android:id="@+id/action_frg_asistencia_to_frg_grupos"
+            app:destination="@id/frg_grupos" />
+    </fragment>
+    <fragment
+        android:id="@+id/frg_acerca_de"
+        android:name="com.mbgmonserrath.ckeckmee.frg_acerca_de"
+        android:label="fragment_frg_acerca_de"
+        tools:layout="@layout/fragment_frg_acerca_de" >
+        <action
+            android:id="@+id/action_frg_acerca_de_to_frg_menu"
+            app:destination="@id/frg_menu" />
+    </fragment>
+    <fragment
+        android:id="@+id/frg_CRUD_Inscri"
+        android:name="com.mbgmonserrath.ckeckmee.frg_CRUD_Inscri"
+        android:label="fragment_frg__c_r_u_d__inscri"
+        tools:layout="@layout/fragment_frg__c_r_u_d__inscri" >
+        <action
+            android:id="@+id/action_frg_CRUD_Inscri_to_frg_inscrpciones"
+            app:destination="@id/frg_inscrpciones" />
+    </fragment>
+</navigation>
